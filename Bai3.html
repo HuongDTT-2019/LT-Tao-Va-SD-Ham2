@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Bai3</title>
+</head>
+<body>
+<p>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</p>
+<script >
+let numbers=prompt("enter the numbers");
+let a =1;
+function factorial() {
+    if(numbers==0){
+        return a;
+    }
+  for (let i=1;i<=numbers;i++){
+         a=a*i;
+  }
+   return a;
+}
+let result=factorial(numbers);
+document.write(numbers+"! = "+result);
+</script>
+</body>
+</html>

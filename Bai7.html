@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Bai7</title>
+</head>
+<body>
+ <p>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</p>
+ <script >
+ function number(a,b) {
+    let arr=[a,b];
+     let temp=arr[0];
+        arr[0]=arr[1];
+        arr[1]=temp;
+   return arr;
+ }
+let result = number(10,20);
+document.write(result);
+</script>
+</body>
+</html>

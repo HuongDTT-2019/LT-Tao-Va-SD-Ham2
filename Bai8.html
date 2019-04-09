@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Bai8</title>
+</head>
+<body>
+<p>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</p>
+<script >
+let arr1=[1,3,5,7,9];
+function move() {
+  for (let i=0;i<arr1.length/2;i++){
+        let temp=arr1[i];
+        arr1[i]=arr1[arr1.length-1-i];
+        arr1[arr1.length-1-i]=temp;
+  }
+  return arr1;
+}
+let result= move(arr1);
+console.log(arr1);
+</script>
+</body>
+</html>

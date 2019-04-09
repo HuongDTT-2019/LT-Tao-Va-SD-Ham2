@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Bai5</title>
+</head>
+<body>
+ <p>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</p>
+ <script >
+ function checkMin(a,b,c) {
+   let min=a;
+   if (a<b){
+       if(a<c){
+           min=a;
+       }else
+           min=c;
+   }else{
+       if (b<c){
+           min=b;
+        }
+       else{
+           min=c;
+       }
+   }
+   return min;
+ }
+ let result=checkMin(7,6,9);
+ alert(result);
+</script>
+</body>
+</html>
